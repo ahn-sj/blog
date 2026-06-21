@@ -9,6 +9,7 @@
 - Content: Markdown files in `src/content/blog`
 - Deploy: GitHub Actions -> Cloudflare Pages
 - Output: `out/`
+- Runtime: Node.js 24, npm 11
 
 ## Source Of Truth
 
@@ -36,6 +37,8 @@ git diff --check
 코드, 스타일, content pipeline 변경이 있으면:
 
 ```bash
+node -v
+npm -v
 npm test
 npm run build
 npm run build-storybook

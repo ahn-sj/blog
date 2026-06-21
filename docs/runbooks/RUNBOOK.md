@@ -13,7 +13,10 @@ asze.net 개인 블로그 운영 절차입니다.
 
 ## Local Setup
 
+Node.js 24와 npm 11을 사용한다.
+
 ```bash
+nvm use
 npm install
 npm run dev
 ```
@@ -40,6 +43,8 @@ thumbnail: "/images/sample.svg"
 ## Verify
 
 ```bash
+node -v
+npm -v
 npm test
 npm run build
 npm run build-storybook
