@@ -1,7 +1,9 @@
-/posts/failure-containment-patterns /posts/failure-containment-patterns/ 301
-/posts/reliability-pattern-lab /posts/failure-containment-patterns/ 301
-/posts/reliability-pattern-lab/ /posts/failure-containment-patterns/ 301
-/posts/first-post /posts/failure-containment-patterns/ 301
-/posts/first-post/ /posts/failure-containment-patterns/ 301
-/posts/vpc-peering-transit-gateway /posts/failure-containment-patterns/ 301
-/posts/vpc-peering-transit-gateway/ /posts/failure-containment-patterns/ 301
+/posts/redis-operations-lab /posts/redis-operations-lab/ 301
+/posts/failure-containment-patterns /posts/redis-operations-lab/ 301
+/posts/failure-containment-patterns/ /posts/redis-operations-lab/ 301
+/posts/reliability-pattern-lab /posts/redis-operations-lab/ 301
+/posts/reliability-pattern-lab/ /posts/redis-operations-lab/ 301
+/posts/first-post /posts/redis-operations-lab/ 301
+/posts/first-post/ /posts/redis-operations-lab/ 301
+/posts/vpc-peering-transit-gateway /posts/redis-operations-lab/ 301
+/posts/vpc-peering-transit-gateway/ /posts/redis-operations-lab/ 301

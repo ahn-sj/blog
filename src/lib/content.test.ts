@@ -9,29 +9,30 @@ describe('content pipeline', () => {
 
     expect(posts).toHaveLength(1);
     expect(posts[0]).toMatchObject({
-      slug: 'failure-containment-patterns',
-      title: '장애 전파를 막는 패턴을 실험으로 이해하기',
-      description: 'timeout, retry, circuit breaker, bulkhead를 장애 전파 관점에서 비교한 설계 노트',
+      slug: 'redis-operations-lab',
+      title: 'Redis 운영을 장애와 복구 관점에서 보기',
+      description: 'RDB/AOF, Sentinel/Cluster, eviction, lock을 운영 선택 기준으로 정리한 글',
       category: 'Infra',
-      thumbnail: '/images/failure-containment-thumbnail.svg',
+      thumbnail: '/images/redis-operations-thumbnail.svg',
     });
     expect(posts[0].dateLabel).toBe('2026.06.21');
   });
 
   test('returns Markdown content by slug', () => {
-    const post = getPostBySlug('failure-containment-patterns');
+    const post = getPostBySlug('redis-operations-lab');
 
-    expect(post.content).toContain('장애 전파 차단의 목표는 장애를 없애는 것이 아니다');
-    expect(post.content).toContain('retry는 복구 장치이면서 증폭 장치다');
-    expect(post.content).toContain('/images/failure-containment-flow.svg');
-    expect(post.content).not.toMatch(/reliability-pattern-lab|lab|실험 노트/);
+    expect(post.content).toContain('Redis는 빠른 저장소로 시작하지만 운영에서는 질문이 달라진다');
+    expect(post.content).toContain('세션 데이터가 사라지면 사용자는 다시 로그인해야 한다');
+    expect(post.content).toContain('/images/redis-operations-map.svg');
+    expect(post.content).not.toMatch(/failure-containment|장애 전파 차단|retry는 복구 장치/);
   });
 
-  test('redirects old post paths to the abstracted slug', () => {
+  test('redirects old post paths to the Redis post slug', () => {
     const redirects = readFileSync('public/_redirects', 'utf8');
 
-    expect(redirects).toContain('/posts/reliability-pattern-lab/ /posts/failure-containment-patterns/ 301');
-    expect(redirects).toContain('/posts/first-post/ /posts/failure-containment-patterns/ 301');
-    expect(redirects).toContain('/posts/vpc-peering-transit-gateway/ /posts/failure-containment-patterns/ 301');
+    expect(redirects).toContain('/posts/failure-containment-patterns/ /posts/redis-operations-lab/ 301');
+    expect(redirects).toContain('/posts/reliability-pattern-lab/ /posts/redis-operations-lab/ 301');
+    expect(redirects).toContain('/posts/first-post/ /posts/redis-operations-lab/ 301');
+    expect(redirects).toContain('/posts/vpc-peering-transit-gateway/ /posts/redis-operations-lab/ 301');
   });
 });

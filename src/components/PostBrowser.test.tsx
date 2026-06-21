@@ -13,7 +13,7 @@ const posts: PostSummary[] = [
     pubDate: '2026-06-21',
     dateLabel: '2026.06.21',
     category: 'Infra',
-    thumbnail: '/images/failure-containment-thumbnail.svg',
+    thumbnail: '/images/redis-operations-thumbnail.svg',
   },
   {
     slug: 'react-1',

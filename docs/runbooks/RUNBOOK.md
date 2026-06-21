@@ -86,7 +86,7 @@ Cloudflare Pages project:
 ```bash
 curl -I https://asze.net/
 curl -I https://www.asze.net/
-curl -I https://asze.net/posts/failure-containment-patterns/
+curl -I https://asze.net/posts/redis-operations-lab/
 ```
 
 기대값:

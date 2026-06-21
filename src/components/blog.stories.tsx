@@ -9,13 +9,13 @@ import { TagBadge } from './TagBadge';
 import { Thumbnail } from './Thumbnail';
 
 const samplePost: PostSummary = {
-  slug: 'failure-containment-patterns',
-  title: '장애 전파를 막는 패턴을 실험으로 이해하기',
-  description: 'timeout, retry, circuit breaker, bulkhead를 장애 전파 관점에서 비교한 설계 노트',
+  slug: 'redis-operations-lab',
+  title: 'Redis 운영을 장애와 복구 관점에서 보기',
+  description: 'RDB/AOF, Sentinel/Cluster, eviction, lock을 운영 선택 기준으로 정리한 글',
   pubDate: '2026-06-21',
   dateLabel: '2026.06.21',
   category: 'Infra',
-  thumbnail: '/images/failure-containment-thumbnail.svg',
+  thumbnail: '/images/redis-operations-thumbnail.svg',
 };
 
 const posts: PostSummary[] = [
@@ -58,7 +58,7 @@ export const TagStates: StoryObj = {
 export const ThumbnailStates: StoryObj = {
   render: () => (
     <div style={{ display: 'flex', gap: 16 }}>
-      <Thumbnail src="/images/failure-containment-thumbnail.svg" alt="장애 전파 차단 비교 이미지" />
+      <Thumbnail src="/images/redis-operations-thumbnail.svg" alt="Redis 운영 판단 이미지" />
       <Thumbnail alt="이미지 없음" />
     </div>
   ),

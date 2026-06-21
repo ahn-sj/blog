@@ -135,11 +135,11 @@
 
 ```yaml
 ---
-title: "장애 전파를 막는 패턴을 실험으로 이해하기"
-description: "timeout, retry, circuit breaker, bulkhead를 장애 전파 관점에서 비교한 설계 노트"
+title: "Redis 운영을 장애와 복구 관점에서 보기"
+description: "RDB/AOF, Sentinel/Cluster, eviction, lock을 운영 선택 기준으로 정리한 글"
 pubDate: "2026-06-21"
 category: "Infra"               # 추가 — 태그 배지 1개 (목록 구분용)
-thumbnail: "/images/failure-containment-thumbnail.svg"  # 추가 — 미리보기 이미지 (선택, 없으면 placeholder)
+thumbnail: "/images/redis-operations-thumbnail.svg"  # 추가 — 미리보기 이미지 (선택, 없으면 placeholder)
 ---
 ```
 
