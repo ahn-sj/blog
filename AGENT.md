@@ -15,7 +15,6 @@
 - 글 목록: `README.md`
 - 운영 절차: `docs/runbooks/RUNBOOK.md`
 - 디자인 기준: `design-drafts/DESIGN.md`
-- React 전환 결정: `docs/adr/ag-68-nextjs-static-export.md`
 
 ## Working Rules
 
