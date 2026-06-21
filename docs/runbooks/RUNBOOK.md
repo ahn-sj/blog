@@ -86,7 +86,7 @@ Cloudflare Pages project:
 ```bash
 curl -I https://asze.net/
 curl -I https://www.asze.net/
-curl -I https://asze.net/posts/reliability-pattern-lab/
+curl -I https://asze.net/posts/failure-containment-patterns/
 ```
 
 기대값:
@@ -94,6 +94,7 @@ curl -I https://asze.net/posts/reliability-pattern-lab/
 - HTTP 200
 - 공개 글 목록과 글 상세 URL이 README의 글 목록과 일치
 - 이미지가 `public/images`에서 정상 제공됨
+- 예전 글 URL은 `_redirects`를 통해 최신 글로 이동함
 
 ## Notes
 

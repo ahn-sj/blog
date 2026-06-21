@@ -6,7 +6,7 @@
 
 | 날짜 | 분류 | 제목 | 원본 |
 | --- | --- | --- | --- |
-| 2026-06-21 | Infra | [장애 전파를 막는 패턴을 실험으로 이해하기](https://asze.net/posts/reliability-pattern-lab/) | [reliability-pattern-lab.md](src/content/blog/reliability-pattern-lab.md) |
+| 2026-06-21 | Infra | [장애 전파를 막는 패턴을 실험으로 이해하기](https://asze.net/posts/failure-containment-patterns/) | [failure-containment-patterns.md](src/content/blog/failure-containment-patterns.md) |
 
 ## 초안
 
@@ -21,5 +21,5 @@ title: "글 제목"
 description: "글 설명"
 pubDate: "YYYY-MM-DD"
 category: "Infra"
-thumbnail: "/images/reliability-pattern-lab-thumbnail.svg"
+thumbnail: "/images/failure-containment-thumbnail.svg"
 ```
