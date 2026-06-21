@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Personal blog sample image</title>
+  <desc id="desc">A simple sample image for GitHub Pages image hosting.</desc>
+  <rect width="1200" height="630" fill="#f7f7f2"/>
+  <rect x="72" y="72" width="1056" height="486" fill="#ffffff" stroke="#d7d7cd" stroke-width="4"/>
+  <circle cx="180" cy="180" r="64" fill="#0f766e"/>
+  <rect x="292" y="144" width="560" height="36" fill="#111827"/>
+  <rect x="292" y="216" width="720" height="24" fill="#59636e"/>
+  <rect x="292" y="268" width="640" height="24" fill="#59636e"/>
+  <rect x="144" y="390" width="912" height="4" fill="#d7d7cd"/>
+  <rect x="144" y="438" width="360" height="28" fill="#0f766e"/>
+  <rect x="144" y="486" width="520" height="20" fill="#59636e"/>
+</svg>

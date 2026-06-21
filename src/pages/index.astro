@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="개인 블로그" description="Markdown 기반 개인 블로그">
+  <header>
+    <h1>개인 블로그</h1>
+    <p class="muted">Markdown으로 쓰고 GitHub Pages로 배포합니다.</p>
+  </header>
+
+  <section>
+    <h2>운영 흐름</h2>
+    <p>
+      <code>src/content/blog</code>에 Markdown 파일을 추가하고 <code>main</code> 브랜치에
+      push하면 GitHub Actions가 정적 사이트를 빌드해 Pages에 배포합니다.
+    </p>
+    <p><a href="/blog/">글 목록 보기</a></p>
+  </section>
+</BaseLayout>
