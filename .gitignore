@@ -1,4 +1,8 @@
 node_modules/
 dist/
+out/
+.next/
+storybook-static/
+artifacts/
 .astro/
 .DS_Store
