@@ -1,47 +1,25 @@
-# asze.net blog
+# asze.net posts
 
-Markdown 기반 개인 블로그입니다. Next.js static export로 정적 HTML을 만들고 GitHub Actions에서 Cloudflare Pages에 배포합니다.
+개인 블로그 글 목록입니다. 운영/작성 절차는 [RUNBOOK.md](docs/runbooks/RUNBOOK.md)를 따릅니다.
 
-## 글 작성
+## 공개 글
 
-새 글은 `src/content/blog/*.md`에 추가합니다.
+| 날짜 | 분류 | 제목 | 원본 |
+| --- | --- | --- | --- |
+| 2026-06-21 | Infra | [첫 글 - GitHub에서 Cloudflare로](https://asze.net/posts/first-post/) | [first-post.md](src/content/blog/first-post.md) |
 
-```md
----
+## 초안
+
+아직 없습니다.
+
+## 글 목록 필드
+
+각 글은 `src/content/blog/*.md`의 frontmatter로 목록 정보를 정의합니다.
+
+```yaml
 title: "글 제목"
 description: "글 설명"
-pubDate: "2026-06-21"
+pubDate: "YYYY-MM-DD"
 category: "Infra"
 thumbnail: "/images/sample.svg"
----
-
-본문
 ```
-
-이미지는 `public/images` 아래에 두고 `/images/file-name.ext`로 참조합니다.
-
-## 명령어
-
-```bash
-npm install
-npm run dev
-npm run build
-npm run storybook
-```
-
-배포 URL:
-
-```text
-https://asze.net/
-```
-
-## Cloudflare Pages 배포 설정
-
-GitHub repository secrets에 아래 값을 추가해야 합니다.
-
-- `CLOUDFLARE_API_TOKEN`: Cloudflare Pages 배포 권한이 있는 API token
-- `CLOUDFLARE_ACCOUNT_ID`: Cloudflare account ID
-
-Cloudflare Pages project 이름은 `blog`입니다.
-
-정적 배포 산출물은 `out/`입니다.
