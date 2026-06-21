@@ -29,7 +29,7 @@ npm run build
 배포 URL:
 
 ```text
-https://blog.pages.dev/
+https://blog-2jo.pages.dev/
 ```
 
 ## Cloudflare Pages 배포 설정
