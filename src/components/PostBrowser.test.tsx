@@ -62,6 +62,8 @@ describe('PostBrowser', () => {
     const user = userEvent.setup();
     render(<PostBrowser posts={posts} />);
 
+    expect(screen.getByRole('heading', { name: 'Infra 1', level: 3 })).toBeInTheDocument();
+
     await user.click(screen.getByRole('button', { name: 'React 2' }));
 
     expect(screen.getByText('글')).toBeInTheDocument();

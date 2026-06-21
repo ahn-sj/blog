@@ -89,7 +89,7 @@ button {
 
 .intro h1 {
   margin: 0 0 10px;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -98,7 +98,7 @@ button {
   max-width: 32em;
   margin: 0;
   color: var(--fg-sub);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -118,7 +118,7 @@ button {
   padding: 3px 9px;
   background: var(--tag-bg, var(--tag-bg-default));
   color: var(--tag-fg, var(--tag-fg-default));
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -135,7 +135,7 @@ button {
   background: #ffffff;
   color: var(--fg-sub);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   padding: 6px 14px;
 }
@@ -207,20 +207,22 @@ button {
 
 .date {
   color: var(--fg-muted);
-  font-size: 13px;
+  font-size: 14px;
   font-variant-numeric: tabular-nums;
 }
 
 .post-title {
-  font-size: 17px;
+  margin: 0;
+  font-size: 18px;
   font-weight: 600;
+  line-height: 1.35;
 }
 
 .post-desc {
   display: -webkit-box;
   overflow: hidden;
   color: var(--fg-sub);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -310,7 +312,7 @@ button {
   display: inline-block;
   margin-bottom: 22px;
   color: var(--fg-muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .back:hover {
@@ -319,7 +321,7 @@ button {
 
 .article-head h1 {
   margin: 14px 0 12px;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -333,7 +335,8 @@ button {
 
 .article-hero {
   width: 100%;
-  height: 320px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   margin: 28px 0 8px;
   flex-basis: auto;
   border-radius: 14px;
@@ -346,7 +349,7 @@ button {
 .prose p,
 .prose li {
   color: #2a2a2a;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.85;
 }
 
@@ -356,8 +359,17 @@ button {
 
 .prose h2 {
   margin: 40px 0 14px;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 700;
+}
+
+.prose img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0 24px;
+  border-radius: 14px;
 }
 
 .prose a {
@@ -409,5 +421,27 @@ button {
 
   .post {
     gap: 14px;
+    min-height: 112px;
+    align-items: flex-start;
+  }
+
+  .post-row {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .thumb:not(.article-hero) {
+    width: 96px;
+    height: 72px;
+    flex-basis: 96px;
+  }
+
+  .article-head h1 {
+    font-size: 32px;
+  }
+
+  .article-hero,
+  .prose img {
+    border-radius: 12px;
   }
 }

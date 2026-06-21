@@ -21,5 +21,6 @@ describe('content pipeline', () => {
     const post = getPostBySlug('first-post');
 
     expect(post.content).toContain('Cloudflare Pages');
+    expect(post.content).toContain('/images/sample.svg');
   });
 });

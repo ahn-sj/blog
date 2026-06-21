@@ -18,7 +18,7 @@ export function PostListItem({ post }: PostListItemProps) {
           <TagBadge label={post.category} />
           <span className="date">{post.dateLabel}</span>
         </span>
-        <span className="post-title">{post.title}</span>
+        <h3 className="post-title">{post.title}</h3>
         <span className="post-desc">{post.description}</span>
       </span>
     </Link>
