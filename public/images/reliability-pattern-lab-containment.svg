@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Failure containment flow</title>
+  <desc id="desc">A flow diagram showing baseline failure propagation and containment with timeout, retry budget, circuit breaker, fallback, and bulkhead.</desc>
+  <rect width="1536" height="1024" fill="#ffffff"/>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <path d="M96 180h1344M96 340h1344M96 500h1344M96 660h1344M96 820h1344"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="118" y="104" fill="#111827" font-size="44" font-weight="800">Failure propagation vs containment</text>
+    <text x="118" y="152" fill="#6b7280" font-size="26">same dependency failure, different blast radius</text>
+  </g>
+  <g transform="translate(118 226)">
+    <rect width="560" height="592" rx="28" fill="#fff7ed" stroke="#fed7aa" stroke-width="3"/>
+    <text x="40" y="66" fill="#9a3412" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="34" font-weight="800">As-Is</text>
+    <text x="40" y="108" fill="#9a3412" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22">no timeout, immediate retry, shared pool</text>
+    <g transform="translate(58 174)" fill="#ffffff" stroke="#f59e0b" stroke-width="3">
+      <rect width="160" height="94" rx="18"/>
+      <rect x="280" width="160" height="94" rx="18"/>
+      <rect x="140" y="190" width="160" height="94" rx="18"/>
+    </g>
+    <g fill="#1f2937" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+      <text x="138" y="229">API</text>
+      <text x="418" y="229">Provider</text>
+      <text x="278" y="419">Shared pool</text>
+    </g>
+    <g fill="none" stroke="#ea580c" stroke-width="8" stroke-linecap="round">
+      <path d="M220 220h112"/>
+      <path d="M332 220l-22 -18M332 220l-22 18"/>
+      <path d="M418 268c0 92-72 122-132 146"/>
+      <path d="M258 268c-68 82-52 120 12 146"/>
+    </g>
+    <g fill="#dc2626" opacity="0.9">
+      <circle cx="454" cy="206" r="18"/>
+      <circle cx="474" cy="240" r="12"/>
+      <circle cx="504" cy="216" r="10"/>
+    </g>
+  </g>
+  <g transform="translate(858 226)">
+    <rect width="560" height="592" rx="28" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="3"/>
+    <text x="40" y="66" fill="#047857" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="34" font-weight="800">To-Be</text>
+    <text x="40" y="108" fill="#047857" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22">budget, breaker, fallback, bulkhead</text>
+    <g transform="translate(58 174)" fill="#ffffff" stroke="#34d399" stroke-width="3">
+      <rect width="160" height="94" rx="18"/>
+      <rect x="280" width="160" height="94" rx="18"/>
+      <rect x="140" y="190" width="160" height="94" rx="18"/>
+    </g>
+    <g fill="#1f2937" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+      <text x="138" y="229">API</text>
+      <text x="418" y="229">Provider</text>
+      <text x="278" y="419">Bulkhead</text>
+    </g>
+    <g fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round">
+      <path d="M220 220h78"/>
+      <path d="M298 220l-22 -18M298 220l-22 18"/>
+      <path d="M418 268c-18 74-62 112-132 146"/>
+    </g>
+    <g transform="translate(322 180)">
+      <rect width="72" height="72" rx="16" fill="#111827"/>
+      <text x="36" y="47" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="800" text-anchor="middle">CB</text>
+    </g>
+    <g transform="translate(54 326)">
+      <rect width="112" height="64" rx="16" fill="#d1fae5"/>
+      <text x="56" y="41" fill="#047857" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="800" text-anchor="middle">fallback</text>
+    </g>
+    <g transform="translate(190 494)">
+      <rect width="176" height="48" rx="14" fill="#0f766e"/>
+      <text x="88" y="32" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="20" font-weight="800" text-anchor="middle">limited blast radius</text>
+    </g>
+  </g>
+  <g transform="translate(704 496)">
+    <circle cx="64" cy="64" r="48" fill="#111827"/>
+    <path d="M44 64h40M84 64l-16-16M84 64L68 80" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

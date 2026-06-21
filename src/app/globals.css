@@ -372,6 +372,67 @@ button {
   border-radius: 14px;
 }
 
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-spacing: 0;
+  margin: 6px 0 24px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.prose th,
+.prose td {
+  min-width: 136px;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 11px 14px;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.prose th {
+  background: #f7f8f8;
+  color: #252525;
+  font-weight: 700;
+}
+
+.prose td {
+  color: #333333;
+}
+
+.prose th:first-child,
+.prose td:first-child {
+  border-left: 1px solid var(--line-strong);
+}
+
+.prose th {
+  border-top: 1px solid var(--line-strong);
+}
+
+.prose th:last-child,
+.prose td:last-child {
+  border-right: 1px solid var(--line-strong);
+}
+
+.prose thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.prose thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.prose tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.prose tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
 .prose a {
   color: var(--accent);
   text-decoration: underline;

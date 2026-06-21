@@ -135,11 +135,11 @@
 
 ```yaml
 ---
-title: "첫 글 — GitHub에서 Cloudflare로"
-description: "정적 사이트 배포 파이프라인을 옮긴 기록"
+title: "장애 전파를 막는 패턴을 실험으로 이해하기"
+description: "timeout, retry, circuit breaker, bulkhead를 장애 전파 관점에서 비교한 설계 노트"
 pubDate: "2026-06-21"
 category: "Infra"               # 추가 — 태그 배지 1개 (목록 구분용)
-thumbnail: "/images/first.png"  # 추가 — 미리보기 이미지 (선택, 없으면 placeholder)
+thumbnail: "/images/reliability-pattern-lab-thumbnail.svg"  # 추가 — 미리보기 이미지 (선택, 없으면 placeholder)
 ---
 ```
 

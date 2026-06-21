@@ -9,13 +9,13 @@ import { TagBadge } from './TagBadge';
 import { Thumbnail } from './Thumbnail';
 
 const samplePost: PostSummary = {
-  slug: 'first-post',
-  title: '첫 글 — GitHub에서 Cloudflare로',
-  description: '정적 사이트 배포 파이프라인을 옮긴 기록',
+  slug: 'reliability-pattern-lab',
+  title: '장애 전파를 막는 패턴을 실험으로 이해하기',
+  description: 'timeout, retry, circuit breaker, bulkhead를 장애 전파 관점에서 비교한 설계 노트',
   pubDate: '2026-06-21',
   dateLabel: '2026.06.21',
   category: 'Infra',
-  thumbnail: '/images/sample.svg',
+  thumbnail: '/images/reliability-pattern-lab-thumbnail.svg',
 };
 
 const posts: PostSummary[] = [
@@ -58,7 +58,7 @@ export const TagStates: StoryObj = {
 export const ThumbnailStates: StoryObj = {
   render: () => (
     <div style={{ display: 'flex', gap: 16 }}>
-      <Thumbnail src="/images/sample.svg" alt="샘플 이미지" />
+      <Thumbnail src="/images/reliability-pattern-lab-thumbnail.svg" alt="장애 전파 차단 실험 이미지" />
       <Thumbnail alt="이미지 없음" />
     </div>
   ),

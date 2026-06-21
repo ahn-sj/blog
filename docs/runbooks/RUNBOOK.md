@@ -34,7 +34,7 @@ title: "글 제목"
 description: "글 설명"
 pubDate: "2026-06-21"
 category: "Infra"
-thumbnail: "/images/sample.svg"
+thumbnail: "/images/<slug>-thumbnail.png"
 ---
 
 본문
@@ -86,14 +86,14 @@ Cloudflare Pages project:
 ```bash
 curl -I https://asze.net/
 curl -I https://www.asze.net/
-curl -I https://asze.net/posts/first-post/
+curl -I https://asze.net/posts/reliability-pattern-lab/
 ```
 
 기대값:
 
 - HTTP 200
-- Cloudflare Pages 기준 문구 유지
-- GitHub Pages 잔여 표현 없음
+- 공개 글 목록과 글 상세 URL이 README의 글 목록과 일치
+- 이미지가 `public/images`에서 정상 제공됨
 
 ## Notes
 
