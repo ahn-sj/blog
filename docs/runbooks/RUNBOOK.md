@@ -87,6 +87,11 @@ Cloudflare Pages project:
 curl -I https://asze.net/
 curl -I https://www.asze.net/
 curl -I https://asze.net/posts/redis-operations-lab/
+curl -I https://asze.net/posts/redis-persistence-rdb-aof/
+curl -I https://asze.net/posts/redis-failover-sentinel-cluster/
+curl -I https://asze.net/posts/redis-memory-eviction/
+curl -I https://asze.net/posts/redis-latency-single-thread/
+curl -I https://asze.net/posts/redis-lock-correctness/
 ```
 
 기대값:

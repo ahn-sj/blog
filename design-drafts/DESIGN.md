@@ -135,8 +135,8 @@
 
 ```yaml
 ---
-title: "Redis 운영을 장애와 복구 관점에서 보기"
-description: "RDB/AOF, Sentinel/Cluster, eviction, lock을 운영 선택 기준으로 정리한 글"
+title: "Redis 운영 주제 지도"
+description: "Redis 운영에서 섞이기 쉬운 주제를 데이터 손실, 장애 전환, 메모리, 지연, 락으로 나눈 안내 글"
 pubDate: "2026-06-21"
 category: "Infra"               # 추가 — 태그 배지 1개 (목록 구분용)
 thumbnail: "/images/redis-operations-thumbnail.svg"  # 추가 — 미리보기 이미지 (선택, 없으면 placeholder)

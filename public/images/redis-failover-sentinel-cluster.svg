@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Redis Sentinel and Cluster</title>
+  <desc id="desc">A visual split between Sentinel failover and Cluster sharding.</desc>
+  <rect width="1600" height="900" fill="#fffdf8"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="96" y="118" fill="#111827" font-size="56" font-weight="800">Sentinel vs Cluster</text>
+    <text x="96" y="166" fill="#6b7280" font-size="26">Question: fail over, or split data?</text>
+    <rect x="96" y="245" width="660" height="455" rx="24" fill="#fff" stroke="#fde68a" stroke-width="4"/>
+    <rect x="844" y="245" width="660" height="455" rx="24" fill="#fff" stroke="#bbf7d0" stroke-width="4"/>
+    <text x="426" y="315" fill="#92400e" text-anchor="middle" font-size="42" font-weight="800">Sentinel</text>
+    <text x="1174" y="315" fill="#166534" text-anchor="middle" font-size="42" font-weight="800">Cluster</text>
+    <circle cx="426" cy="420" r="54" fill="#fee2e2" stroke="#dc2626" stroke-width="5"/>
+    <circle cx="290" cy="555" r="46" fill="#fef3c7" stroke="#d97706" stroke-width="5"/>
+    <circle cx="562" cy="555" r="46" fill="#fef3c7" stroke="#d97706" stroke-width="5"/>
+    <path d="M392 454l-66 64M460 454l66 64" stroke="#92400e" stroke-width="8" stroke-linecap="round"/>
+    <text x="426" y="645" fill="#374151" text-anchor="middle" font-size="27">promote replica after master failure</text>
+    <rect x="985" y="385" width="120" height="96" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="5"/>
+    <rect x="1114" y="385" width="120" height="96" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+    <rect x="1243" y="385" width="120" height="96" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="5"/>
+    <text x="1045" y="443" text-anchor="middle" fill="#166534" font-size="26" font-weight="800">slot A</text>
+    <text x="1174" y="443" text-anchor="middle" fill="#1d4ed8" font-size="26" font-weight="800">slot B</text>
+    <text x="1303" y="443" text-anchor="middle" fill="#991b1b" font-size="26" font-weight="800">slot C</text>
+    <text x="1174" y="645" fill="#374151" text-anchor="middle" font-size="27">shard keys across nodes</text>
+    <text x="800" y="782" fill="#111827" text-anchor="middle" font-size="34" font-weight="800">Do not use one name for two different questions</text>
+  </g>
+</svg>
